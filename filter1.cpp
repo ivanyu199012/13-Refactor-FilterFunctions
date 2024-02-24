@@ -6,9 +6,10 @@ PersonVector getPeopleOldThan18(const CityVector &cityVector);
 int main()
 {
   const CityVector cities = initData();
-  // std::cout << cities[0]->getCitizens()[0]->getName() << std::endl;
-  PersonVector personVector  = getPeopleOldThan18(cities);
-  for(auto person: personVector)
+  std::cout << "----------------------------" << std::endl;
+  std::cout << "People larger than 18:" << std::endl;
+  PersonVector personVector = getPeopleOldThan18(cities);
+  for (auto person : personVector)
   {
     std::cout << person->getName() << ", Age: " << person->getAge() << std::endl;
   }

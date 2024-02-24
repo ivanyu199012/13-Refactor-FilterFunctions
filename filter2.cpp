@@ -8,8 +8,10 @@ int main()
 {
   const CityVector cities = initData();
 
-  PersonVector personVector  = getPeopleOldThan18(cities);
-  for(auto person: personVector)
+  PersonVector personVector = getPeopleOldThan18(cities);
+  std::cout << "----------------------------" << std::endl;
+  std::cout << "People larger than 18:" << std::endl;
+  for (auto person : personVector)
   {
     std::cout << person->getName() << ", Age: " << person->getAge() << std::endl;
   }
@@ -17,10 +19,12 @@ int main()
   std::cout << "----------------------------" << std::endl;
 
   personVector = getPeopleIncomeMoreThan15000(cities);
-  for(auto person: personVector)
+  std::cout << "People has income greather than 15000:" << std::endl;
+  for (auto person : personVector)
   {
     std::cout << person->getName() << ", Income: " << person->getIncome() << std::endl;
   }
+  std::cout << "----------------------------" << std::endl;
 }
 
 PersonVector getPeopleIncomeMoreThan15000(const CityVector &cityVector)
