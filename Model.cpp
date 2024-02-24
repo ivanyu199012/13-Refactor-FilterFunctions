@@ -2,7 +2,7 @@
 
 const CityVector initData()
 {
-  std::vector<Person *> londonCitizens{new Person("John", 34, 10000),
+  std::vector<Person *> londonCitizens{new Person("John", 34, 10000), // Name, Age, Income
                                        new Person("Peter", 54, 20000),
                                        new Person("Mary", 17, 3000)};
 
@@ -14,7 +14,7 @@ const CityVector initData()
                                       new Person("Gilbin", 52, 20000),
                                       new Person("YoungSoo", 15, 3000)};
 
-  return CityVector {new City("London", londonCitizens),
+  return CityVector{new City("London", londonCitizens),
                     new City("Beijing", beijingCitizens),
                     new City("Seoul", seoulCitizens)};
 }

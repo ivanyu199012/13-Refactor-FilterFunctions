@@ -2,7 +2,7 @@
 #include "Model.h"
 
 PersonVector getPeopleOldThan18(const CityVector &cityVector);
-PersonVector getPeopleIncomeMoreThan15000(const CityVector &cityVector);
+PersonVector getPeopleEarnMoreThan15000(const CityVector &cityVector);
 
 int main()
 {
@@ -18,7 +18,7 @@ int main()
 
   std::cout << "----------------------------" << std::endl;
 
-  personVector = getPeopleIncomeMoreThan15000(cities);
+  personVector = getPeopleEarnMoreThan15000(cities);
   std::cout << "People has income greather than 15000:" << std::endl;
   for (auto person : personVector)
   {
@@ -27,7 +27,7 @@ int main()
   std::cout << "----------------------------" << std::endl;
 }
 
-PersonVector getPeopleIncomeMoreThan15000(const CityVector &cityVector)
+PersonVector getPeopleEarnMoreThan15000(const CityVector &cityVector)
 {
   PersonVector outputPersonVector;
   for (auto city : cityVector)
@@ -42,7 +42,6 @@ PersonVector getPeopleIncomeMoreThan15000(const CityVector &cityVector)
   }
   return outputPersonVector;
 }
-
 
 PersonVector getPeopleOldThan18(const CityVector &cityVector)
 {
