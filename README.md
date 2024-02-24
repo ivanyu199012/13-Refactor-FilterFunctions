@@ -5,14 +5,11 @@
 ## Blog
 [C++, Implement filter function for refactoring to keep code dry, clean and flexible](https://ivanyu2021.hashnode.dev/c-implement-filter-function-for-refactoring-to-keep-code-dry-clean-and-flexible)
 
-
-<!-- omit in toc -->
-## Content
 - [Requirements](#requirements)
 - [Run](#run)
 - [Output](#output)
-  - [](#)
-
+  - [Task: Custom build \& run C++ filter 1](#task-custom-build--run-c-filter-1)
+  - [Task: Custom build \& run C++ filter 2 / 3](#task-custom-build--run-c-filter-2--3)
 
 
 ## Requirements
@@ -27,8 +24,7 @@
 
 ## Output
 
-###
-Task: Custom build & run C++ filter 1
+### Task: Custom build & run C++ filter 1
 ```
 ----------------------------
 People larger than 18:
@@ -40,7 +36,7 @@ Mr. Pak, Age: 32
 Gilbin, Age: 52
 ```
 
-Task: Custom build & run C++ filter 2 / 3
+### Task: Custom build & run C++ filter 2 / 3
 ```
 ----------------------------
 People larger than 18:
