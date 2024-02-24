@@ -1,0 +1,35 @@
+{
+  "tasks": [
+    {
+      "type": "process",
+      "label": "Custom build & run C++ filter 1",
+      "command": "${fileDirname}\\build.bat",
+      "args": [
+        "${fileDirname}\\filter1.cpp",
+        "${fileDirname}\\Model.cpp"
+      ],
+      "detail": "Custom build & run ALL C++ files using build.bat"
+    },
+    {
+      "type": "process",
+      "label": "Custom build & run C++ filter 2",
+      "command": "${fileDirname}\\build.bat",
+      "args": [
+        "${fileDirname}\\filter2.cpp",
+        "${fileDirname}\\Model.cpp"
+      ],
+      "detail": "Custom build & run ALL C++ files using build.bat"
+    },
+    {
+      "type": "process",
+      "label": "Custom build & run C++ filter 3",
+      "command": "${fileDirname}\\build.bat",
+      "args": [
+        "${fileDirname}\\filter3.cpp",
+        "${fileDirname}\\Model.cpp"
+      ],
+      "detail": "Custom build & run ALL C++ files using build.bat"
+    }
+  ],
+  "version": "2.0.0"
+}
