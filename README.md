@@ -3,44 +3,57 @@
 
 <!-- omit in toc -->
 ## Blog
-[Electron + Django, package it to production](https://ivanyu2021.hashnode.dev/electron-django-package-it-to-production)
+[C++, Implement filter function for refactoring to keep code dry, clean and flexible](https://ivanyu2021.hashnode.dev/c-implement-filter-function-for-refactoring-to-keep-code-dry-clean-and-flexible)
+
 
 <!-- omit in toc -->
+## Content
 - [Requirements](#requirements)
-- [Installation](#installation)
-- [Package](#package)
 - [Run](#run)
+- [Output](#output)
+  - [](#)
+
+
 
 ## Requirements
-- Python 3.9.10
-- Virtualenv 20.13.1
-- Node js 14.18.3
-
-## Installation
-```cmd
-npm install
-
-cd python
-virtualenv edtwExampleEnv
-edtwExampleEnv\Scripts\activate
-
-cd edtwExample
-pip install -r requirements.txt
-```
-## Package
-
-```cmd
-REM Back to python folder
-cd ..
-pyinstaller --name=edtwExample edtwExample\manage.py --noconfirm
-
-REM Back to root folder
-cd ..
-npm run package
-```
+- g++ (using C++ 17), (https://code.visualstudio.com/docs/cpp/config-ming)
+- Visual Studio Code
 
 ## Run
+- `Ctrl + Shift + T` and then select the following task to run
+![alt text](img/image.png)
+
+  Reference: [tasks.json](https://github.com/ivanyu199012/13-Refactor-FilterFunctions/blob/main/.vscode/tasks.json)
+
+## Output
+
+###
+Task: Custom build & run C++ filter 1
 ```
-cd out\edtwexample-win32-x64
-edtwexample.exe
+----------------------------
+People larger than 18:
+John, Age: 34
+Peter, Age: 54
+Wong Yin, Age: 32
+Xiu Ming, Age: 52
+Mr. Pak, Age: 32
+Gilbin, Age: 52
+```
+
+Task: Custom build & run C++ filter 2 / 3
+```
+----------------------------
+People larger than 18:
+John, Age: 34
+Peter, Age: 54
+Wong Yin, Age: 32
+Xiu Ming, Age: 52
+Mr. Pak, Age: 32
+Gilbin, Age: 52
+----------------------------
+People has income greather than 15000:
+Peter, Income: 20000
+Xiu Ming, Income: 20000
+Gilbin, Income: 20000
+----------------------------
 ```
